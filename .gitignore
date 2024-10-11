@@ -168,7 +168,6 @@ node_modules/
 .breakpoints
 
 
-Makefile
 
 # Prerequisites
 *.d
@@ -222,3 +221,8 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+Makefile
+
+# Extra C Files
+main
+main-debug
