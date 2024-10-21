@@ -6,9 +6,9 @@
 void display(vect absBlock[], vect grid[], vect res) {
   for (int y=0; y<res.y; y++) {
     for (int x=0; x<res.x; x++) {
-      int pos[2] = {x,y};
-      if (vectIncluded(pos, absBlock)
-        || vectIncluded(pos, grid)) {
+      vect pos = {x,y};
+      if (vectIncluded(pos, absBlock, 2)
+        || vectIncluded(pos, grid, 2)) {
         printf("#");
       } else {
         printf(".");
