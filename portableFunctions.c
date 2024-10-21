@@ -6,10 +6,10 @@ int vectCompare(vect vectA, vect vectB) {
   return ((vectA.x == vectB.x) && (vectA.y == vectB.y));
 }
 
-int vectIncluded(vect vect, vect array[]) {
-  int len = sizeof(array) / sizeof(vect);
+int vectIncluded(vect vector, vect array[]) {
+  int len = sizeof(array) / sizeof(vector);
   for (int i=0; i<len; i++) {
-    if (vectCompare(vect, array[i])) {
+    if (vectCompare(vector, array[i])) {
       return 1;
     }
   }

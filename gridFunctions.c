@@ -1,7 +1,6 @@
 
 #include "header-files/typeDef.h"
 #include "header-files/gridFunctions.h"
-#include "header-files/portableFunctions.h"
 
 
 void display(vect absBlock[], vect grid[], vect res) {
