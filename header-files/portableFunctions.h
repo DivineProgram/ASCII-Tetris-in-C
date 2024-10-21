@@ -4,6 +4,7 @@
 
 #include "typeDef.h"
 
-void display(vect absBlock[], vect grid[], vect res);
+int vectCompare(vect vectA, vect vectB);
+int vectIncluded(vect vect, vect array[]);
 
 #endif
