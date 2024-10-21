@@ -12,4 +12,11 @@ typedef struct {
   vect coords[64];
 } vect_array;
 
+typedef struct {
+  int a;
+  int b;
+  int c;
+  int d;
+} mat;
+
 #endif

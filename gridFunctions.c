@@ -1,5 +1,6 @@
 
 #include "header-files/typeDef.h"
+#include "header-files/portableFunctions.h"
 #include "header-files/gridFunctions.h"
 
 
@@ -18,6 +19,11 @@ void display(vect_array absBlock, vect_array grid, vect res) {
   }
 }
 
-void blockRelToAbs(int relBlock[][2], int origin[2]) {
-  
+void blockRelToAbs(vect_array relBlock, vect origin, vect_array* destination) {
+  vect_array res;
+  res.len = relBlock.len;
+  for (int i=0; i<relBlock.len; i++) {
+    vectAvect(relBlock.coords[i], origin, &(res.coords[i]));
+  }
+  memcpy(destination, &res, sizeof(vect_array));
 }
