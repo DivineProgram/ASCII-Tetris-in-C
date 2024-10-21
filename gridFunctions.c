@@ -27,3 +27,12 @@ void blockRelToAbs(vect_array relBlock, vect origin, vect_array* destination) {
   }
   memcpy(destination, &res, sizeof(vect_array));
 }
+
+int blockColliding(vect_array absBlock, vect_array grid, vect res) {
+  for (int i=0; i<absBlock.len; i++) {
+    return (vectIncluded(absBlock.coords[i], grid)
+      || !(0 <= absBlock.coords[i].x && absBlock.coords[i].x < res.x)
+      || !(0 <= absBlock.coords[i].y && absBlock.coords[i].y < res.y));
+    }
+  }
+}
