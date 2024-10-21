@@ -3,12 +3,12 @@
 #include "header-files/gridFunctions.h"
 
 
-void display(vect absBlock[], vect grid[], vect res) {
+void display(vect_array absBlock, vect_array grid, vect res) {
   for (int y=0; y<res.y; y++) {
     for (int x=0; x<res.x; x++) {
       vect pos = {x,y};
-      if (vectIncluded(pos, absBlock, 2)
-        || vectIncluded(pos, grid, 2)) {
+      if (vectIncluded(pos, absBlock)
+        || vectIncluded(pos, grid)) {
         printf("#");
       } else {
         printf(".");

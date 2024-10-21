@@ -7,4 +7,9 @@ typedef struct {
   int y;
 } vect;
 
+typedef struct {
+  int len;
+  vect coords[64];
+} vect_array;
+
 #endif

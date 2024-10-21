@@ -6,8 +6,8 @@
 
 
 int main(void) {
-  vect block[] = {{2,1}, {1,1}};
-  vect grid[] = {{4,4}, {3,3}};
+  vect_array block = {2, {{2,1}, {1,1}}};
+  vect_array grid = {2, {{4,4}, {3,3}}};
   vect res = {5,5};
   display(block, grid, res);
 }
