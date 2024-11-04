@@ -3,6 +3,7 @@
 #include "header-files/typeDef.h"
 #include "header-files/gridFunctions.h"
 #include "header-files/portableFunctions.h"
+#include "header-files/userInput.h"
 
 int main(void) {
 
@@ -22,4 +23,12 @@ int main(void) {
   vectMerge(absBlock, grid, &grid);
   absBlock = EMPTY_VECT_ARRAY;
   display(absBlock, grid, res);
+
+  char input;
+  while (1) {
+    input = getkb();
+    if (input != NULL) {
+      printf("everland\n");
+    }
+  }
 }

@@ -33,6 +33,5 @@ int blockColliding(vect_array absBlock, vect_array grid, vect res) {
     return (vectIncluded(absBlock.coords[i], grid)
       || !(0 <= absBlock.coords[i].x && absBlock.coords[i].x < res.x)
       || !(0 <= absBlock.coords[i].y && absBlock.coords[i].y < res.y));
-    }
   }
 }

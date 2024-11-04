@@ -13,6 +13,11 @@ typedef struct {
 } vect_array;
 
 typedef struct {
+  vect origin;
+  vect_array relBlocks;
+} block_obj;
+
+typedef struct {
   int a;
   int b;
   int c;
